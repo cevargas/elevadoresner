@@ -1,0 +1,166 @@
+
+/** html **/
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+/** cores base **/
+
+.grey-light {
+    color: rgba(218, 218, 218, 100);
+    color: #DADADA;    
+}
+
+.grey-darker {
+    color: rgba(135, 135, 135, 100);
+    color: #878787;    
+}
+
+.red-light {
+    color: rgba(241, 79, 76, 100);   
+    color: #F14F4C;     
+}
+
+.red-lighten {
+    color: rgba(239, 60, 55, 100); 
+    color: #EF3C37;       
+}
+
+.red-darker {
+    color: rgba(164, 28, 32, 100);   
+    color: #A41C20;     
+}
+
+.green-light {
+    color: rgba(164, 28, 32, 100);
+    color: #C1D370;
+}
+
+.green-darker {
+    color: #018949;
+    color: rgba(1, 137, 73, 100);    
+}
+
+/** cores padrao **/
+
+.red {
+  color: rgba(181, 36, 42, 100);
+  color: #6F6F6F;
+}
+
+.bg-red {
+  background-color: rgba(181, 36, 42, 100);
+  background-color: #6F6F6F;
+}
+
+.green {
+  color: rgba(51, 136, 77, 100);
+  color: #33884D;
+}
+
+.bg-green {
+  background-color: rgba(51, 136, 77, 100);
+  background-color: #33884D;
+}
+
+.black {
+  color: rgba(31, 30, 32, 100);
+  color: #1F1E20;
+}
+
+.bg-black {
+  background-color: rgba(31, 30, 32, 100);
+  background-color: #1F1E20;
+}
+
+.white {
+  color: rgba(255, 255, 255, 100);
+  color: #FFFF6F;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 100);
+  background-color: #FFFF6F;
+}
+
+.custom-spaces {
+    margin: 10px 0 10px;
+    padding: 10px;
+}
+
+
+/** header **/
+
+#home {
+    display: block;
+    overflow: hidden;    
+}
+
+#header {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(230, 230, 230, 100);
+    height: 100px;
+}
+
+#slider {
+    display: block;
+    height: 400px;
+    background-color: #21775E;
+}
+
+#content {
+    display: block;
+    overflow: hidden; 
+}
+
+    #concepts {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #concepts .items {
+        display: flex;
+        height: 320px;
+    }
+    
+    #concepts .items .padding-inside {
+        align-items: stretch;
+        flex: 1;
+        background-color: rgba(230, 230, 230, 100);      
+    }
+    
+    #inside-dev {
+        display: block;
+        height: 400px;
+    }
+    
+#content-middle {
+    overflow: hidden;
+    display: block;
+    height: 400px;
+    background: #ccc;
+}
+
+#content-footer {
+    overflow: hidden;
+    display: block;
+    height: 400px;
+    background: #C1D370;
+}
+
+#footer {
+    overflow: hidden;
+    display: block;
+    height: 500px;
+    background: #3c3c3c;
+}
