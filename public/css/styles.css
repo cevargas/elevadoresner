@@ -1,6 +1,6 @@
 
 /** html **/
-html {
+html, body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
     font-weight: normal;
@@ -91,31 +91,97 @@ html {
   background-color: #FFFF6F;
 }
 
+/** default css **/
+
 .custom-spaces {
     margin: 10px 0 10px;
     padding: 10px;
 }
 
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  z-index: 9999;
+    width:inherit;
+}
 
-/** header **/
+
+/** pagina inicial **/
 
 #home {
     display: block;
     overflow: hidden;    
 }
 
-#header {
-    display: block;
+header {
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgba(230, 230, 230, 100);
-    height: 100px;
+    min-height: 100px;
 }
 
+header menu {
+    display: flex;
+    align-items: stretch;
+    flex: 1;  
+}
+
+header menu nav  {   
+    display: flex;
+    align-items: stretch;
+    flex: 1;  
+}
+
+header menu nav .container {  
+    display: flex;
+    border: 1px solid green;
+}
+
+#logo {
+    align-items: stretch;
+    border: 1px solid red;
+}
+
+#logo p { //sera a img da logo
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+#menu-list {
+    display: block;
+    border: 1px solid red; 
+    margin: 0 auto; 
+}
+
+    #menu-list ul {
+        display: flex;
+        list-style: none;
+        list-style-type: none;
+    }
+
+        #menu-list ul li {
+            align-items: stretch;
+            flex: 1;
+        }
+*/
+
 #slider {
+    margin-top: 140px;
     display: block;
     height: 400px;
     background-color: #21775E;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #content {
