@@ -9,7 +9,17 @@ html, body {
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #878787;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /** cores base **/
@@ -52,43 +62,43 @@ html, body {
 /** cores padrao **/
 
 .red {
-  color: rgba(181, 36, 42, 100);
-  color: #6F6F6F;
+    color: rgba(181, 36, 42, 100);
+    color: #6F6F6F;
 }
 
 .bg-red {
-  background-color: rgba(181, 36, 42, 100);
-  background-color: #6F6F6F;
+    background-color: rgba(181, 36, 42, 100);
+    background-color: #6F6F6F;
 }
 
 .green {
-  color: rgba(51, 136, 77, 100);
-  color: #33884D;
+    color: rgba(51, 136, 77, 100);
+    color: #33884D;
 }
 
 .bg-green {
-  background-color: rgba(51, 136, 77, 100);
-  background-color: #33884D;
+    background-color: rgba(51, 136, 77, 100);
+    background-color: #33884D;
 }
 
 .black {
-  color: rgba(31, 30, 32, 100);
-  color: #1F1E20;
+    color: rgba(31, 30, 32, 100);
+    color: #1F1E20;
 }
 
 .bg-black {
-  background-color: rgba(31, 30, 32, 100);
-  background-color: #1F1E20;
+    background-color: rgba(31, 30, 32, 100);
+    background-color: #1F1E20;
 }
 
 .white {
-  color: rgba(255, 255, 255, 100);
-  color: #FFFF6F;
+    color: rgba(255, 255, 255, 100);
+    color: #FFFF6F;
 }
 
 .bg-white {
-  background-color: rgba(255, 255, 255, 100);
-  background-color: #FFFF6F;
+    background-color: rgba(255, 255, 255, 100);
+    background-color: #FFFF6F;
 }
 
 /** default css **/
@@ -99,11 +109,11 @@ html, body {
 }
 
 .fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right:0;
-  z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 9999;
     width:inherit;
 }
 
@@ -146,7 +156,7 @@ header menu nav .container {
 }
 
 #logo p { //sera a img da logo
-    background: yellow;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -154,24 +164,43 @@ header menu nav .container {
     transform: translate(-50%, -50%);
 }
 
-/*
 #menu-list {
     display: block;
-    border: 1px solid red; 
-    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    font-size: 0.9em;
+    color: #999;
 }
 
-    #menu-list ul {
-        display: flex;
-        list-style: none;
-        list-style-type: none;
-    }
+#menu-list ul {    
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;       
+}
 
-        #menu-list ul li {
-            align-items: stretch;
-            flex: 1;
-        }
-*/
+#menu-list ul li, #menu-list ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;  
+}
+
+#menu-list ul li.active {
+    border-top: 4px solid #999;
+}
+
+#menu-list ul li:hover {
+    border-top: 4px solid #CCC;    
+}
+
+#menu-phone {
+    border: 1px solid yellow; 
+}          
 
 #slider {
     margin-top: 140px;
@@ -189,27 +218,27 @@ header menu nav .container {
     overflow: hidden; 
 }
 
-    #concepts {
-        display: block;
-        margin-top: 20px;
-    }
+#concepts {
+    display: block;
+    margin-top: 20px;
+}
 
-    #concepts .items {
-        display: flex;
-        height: 320px;
-    }
-    
-    #concepts .items .padding-inside {
-        align-items: stretch;
-        flex: 1;
-        background-color: rgba(230, 230, 230, 100);      
-    }
-    
-    #inside-dev {
-        display: block;
-        height: 400px;
-    }
-    
+#concepts .items {
+    display: flex;
+    height: 320px;
+}
+
+#concepts .items .padding-inside {
+    align-items: stretch;
+    flex: 1;
+    background-color: rgba(230, 230, 230, 100);      
+}
+
+#inside-dev {
+    display: block;
+    height: 400px;
+}
+
 #content-middle {
     overflow: hidden;
     display: block;
