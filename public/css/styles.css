@@ -20,6 +20,12 @@ a {
 
 a:hover {
     text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+img { 
+  max-width: 100%;
 }
 
 /** cores base **/
@@ -117,6 +123,22 @@ a:hover {
     width:inherit;
 }
 
+.shadow-bottom {
+    box-shadow: 0 8px 8px -8px #999;
+}
+
+.radius {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 /** pagina inicial **/
 
@@ -147,12 +169,10 @@ header menu nav  {
 
 header menu nav .container {  
     display: flex;
-    border: 1px solid green;
 }
 
 #logo {
     align-items: stretch;
-    border: 1px solid red;
 }
 
 #logo p { //sera a img da logo
@@ -195,23 +215,25 @@ header menu nav .container {
 }
 
 #menu-list ul li:hover {
-    border-top: 4px solid #CCC;    
+    /*border-top: 4px solid #CCC;*/
 }
 
 #menu-phone {
-    border: 1px solid yellow; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }          
+
+/** slider **/
 
 #slider {
     margin-top: 140px;
     display: block;
-    height: 400px;
-    background-color: #21775E;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 420px;
+    overflow: hidden;
 }
+
+/** tails **/
 
 #content {
     display: block;
@@ -223,7 +245,7 @@ header menu nav .container {
     margin-top: 20px;
 }
 
-#concepts .items {
+#concepts .items div:first-child {
     display: flex;
     height: 320px;
 }
@@ -234,16 +256,94 @@ header menu nav .container {
     background-color: rgba(230, 230, 230, 100);      
 }
 
+#concepts .items img {
+    filter: grayscale(2.0);
+}
+
+#concepts .items img:hover {
+    filter: grayscale(0);
+}
+
+#concepts .items .btn-moreinf {
+    background: #1F1E20;
+    display: block;
+    padding: 8px;
+    margin-top: 5px;
+    color: white;
+    font-size: 1.1em;
+}
+
+#concepts .items .btn-moreinf span:first-child {
+    margin-left: 5px;
+}
+
+#concepts .items .btn-moreinf span {
+    margin-top: 5px;
+}
+
+#concepts .items .btn-moreinf span:last-child {
+    opacity: 0.6;
+    margin-right: 5px;
+}
+
+#concepts .items .btn-moreinf .btn-descr {
+    margin-left: 10px;
+    opacity: 0.8;    
+}
+
+/** conteudo central **/
+
 #inside-dev {
     display: block;
-    height: 400px;
+    min-height: 400px;
+    padding: 5px;
 }
+
+#inside-dev .inside-title {
+    margin-top: 30px;
+}
+
+#inside-dev .inside-desc {
+    
+}
+
+#inside-dev .inside-btn {
+    margin-top: 20px;
+}
+
+/** conteudo secundario **/
 
 #content-middle {
     overflow: hidden;
     display: block;
     height: 400px;
     background: #ccc;
+    line-height: 2;
+}
+
+#content-middle #contentmd-left {
+    margin-top: 30px;
+}
+
+#content-middle #contentmd-right {
+    display: block;
+    padding-top: 20px;
+}
+
+#content-middle #contentmd-right .inside-desc {
+    padding-right: 90px;
+    text-align:right;
+}
+
+#content-middle #contentmd-right .inside-title {
+    padding-right: 90px;
+    text-align:right; 
+}
+
+#content-middle #contentmd-right .inside-btn {
+    padding-right: 90px;
+    text-align:right; 
+    margin-top: 20px;
 }
 
 #content-footer {
@@ -258,4 +358,10 @@ header menu nav .container {
     display: block;
     height: 500px;
     background: #3c3c3c;
+}
+
+/** libs **/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
