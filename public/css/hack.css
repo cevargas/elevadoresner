@@ -1,3 +1,4 @@
+/** hack google chrome **/
 menu {
     list-style-type: none;
     -webkit-margin-before: 0;
@@ -6,3 +7,19 @@ menu {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+
+/** bootstrap **/
+.btn-success {
+    opacity: 0.9;
+    background-color: #00A690 !important;
+    border-color: #119A85;
+}
+
+.btn-success:hover {
+    opacity: 1;
+    background-color: #00A690 !important;
+    border-color: #119A85;
+}
+
+
+

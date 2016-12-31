@@ -11,7 +11,7 @@
 
         <title>Elevadores NER</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
         <link href="public/css/normalize.css" rel="stylesheet">
         <link href="public/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/libs/slippry/slippry.css" rel="stylesheet">
@@ -78,7 +78,7 @@
                             <img src="public/images/elevador.jpg" alt="Fabricação de Elevadores" class="cover-img radius">
                         </div>
                         <div class="btn-moreinf radius">
-                            <span class="green glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <span class="green-dark glyphicon glyphicon-list-alt" aria-hidden="true"></span>
                             <span class="btn-descr">Elevadores</span>
                             <span class="grey-darker glyphicon glyphicon-plus-sign pull-right" aria-hidden="true"></span>
                         </div>
@@ -88,7 +88,7 @@
                             <img src="public/images/manutencao.jpg" alt="Assistência Técnica para Elevadores" class="cover-img radius">
                         </div>
                         <div class="btn-moreinf radius">
-                            <span class="green glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                            <span class="green-dark glyphicon glyphicon-wrench" aria-hidden="true"></span>
                             <span class="btn-descr">Assistência</span>
                             <span class="grey-darker glyphicon glyphicon-plus-sign pull-right" aria-hidden="true"></span>
                         </div>
@@ -98,7 +98,7 @@
                             <img src="public/images/modernizacao.jpg" alt="Modernização de Elevadores" class="cover-img radius">
                         </div>
                         <div class="btn-moreinf radius">
-                            <span class="green glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            <span class="green-dark glyphicon glyphicon-globe" aria-hidden="true"></span>
                             <span class="btn-descr">Modernização</span>
                             <span class="grey-darker glyphicon glyphicon-plus-sign pull-right" aria-hidden="true"></span>
                         </div>
@@ -108,7 +108,7 @@
                 <div id="inside-dev" class="row custom-spaces">                    
                     <div id="inside-left" class="col-md-7">                        
                         <div class="row inside-title">
-                            <h1 class="green-darker">
+                            <h1 class="green-dark">
                                 Garantir a manutenção do seu elevador é garantir uma ótima gestão para seu condomínio.
                             </h1>
                         </div>
@@ -148,18 +148,83 @@
                 </div>
             </div>
 
-            <div id="content-footer" class="row">                    
-
+            <div id="content-footer" class="row">
+                <div class="container ">
+                    <div class="">
+                        <h3>Precisa de um orçamento? Entramos em contato com você. </h3>
+                    </div>
+                    <div class="">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="nome">Nome: </label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome">
+                            </div>
+                            <!--div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email">
+                            </div-->
+                            <div class="form-group">
+                                <label for="fone">Telefone: </label>
+                                <input type="text" class="form-control" id="fone" name="fone" placeholder="Seu telefone">
+                            </div>
+                            <button type="submit" class="btn btn-danger">Solicitar Orçamento</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <!-- footer -->
-            <footer id="footer" class="row">                
+            <footer id="footer" class=" row clearfix">                
 
+                <div class="container">
+                    <div class="footer-left col-md-6">
+                        <h2 class="white">
+                            <span class="green-dark glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            Onde estamos
+                        </h2>
+                    </div>
+
+                    <div class="footer-right col-md-6">
+                        <h2 class="white">
+                            <span class="red-lighten glyphicon glyphicon-comment" aria-hidden="true"></span>
+                            Contato
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="container white">                    
+                    <div class="footer-left col-md-6">
+                        <div class="clearfix footer-empresa">
+                            Ner Elevadores - CJPJ: 99.9999.999.99999                            
+                        </div>
+                        <div class="clearfix footer-endereco">
+                            Rua 3130, 407. Balneário Camboriú - Santa Catarina - Brasil         
+                        </div>                       
+                        <!--div class="clearfix footer-email">
+                            <span class="green-dark glyphicon glyphicon-envelope" aria-hidden="true"></span> contato@elevadoresner.com.br      
+                        </div>
+                        <div class="clearfix footer-telefone">
+                            <h3>
+                                <span class="green-dark glyphicon glyphicon glyphicon-earphone" aria-hidden="true"></span> (47) 3367-2135      
+                            </h3>
+                        </div-->
+                    </div>
+                    <div class="footer-right col-md-6">
+                        
+                    </div>                    
+                </div>
+                
+                <div class="clearfix copyright container white"> 
+                    <div class="footer-left col-md-6">
+                        © 2017 Elevadores NER
+                    </div>    
+                    <div class="footer-right col-md-6">
+                        <a href="http://www.imagemacao.com.br/" target="_blank"> Imagem e Ação</a>
+                    </div> 
+                </div>
             </footer>
 
         </div><!-- / container-fluid -->
-
-
 
         <!-- scripts -->
         <script src="public/js/jquery-2.1.1.js"></script>  

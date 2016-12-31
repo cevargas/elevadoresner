@@ -1,7 +1,7 @@
 
 /** html **/
 html, body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1em;
     font-weight: normal;
 }
@@ -22,6 +22,7 @@ a:hover {
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+    color: #00A690;
 }
 
 img { 
@@ -58,6 +59,11 @@ img {
 .green-light {
     color: rgba(164, 28, 32, 100);
     color: #C1D370;
+}
+
+.green-dark {
+    color: rgba(0, 166, 144, 100);
+    color: #00A690;
 }
 
 .green-darker {
@@ -99,12 +105,12 @@ img {
 
 .white {
     color: rgba(255, 255, 255, 100);
-    color: #FFFF6F;
+    color: #FFFFFF;
 }
 
 .bg-white {
     background-color: rgba(255, 255, 255, 100);
-    background-color: #FFFF6F;
+    background-color: #FFFFFF;
 }
 
 /** default css **/
@@ -211,7 +217,7 @@ header menu nav .container {
 }
 
 #menu-list ul li.active {
-    border-top: 4px solid #999;
+    border-top: 4px solid #00A690;
 }
 
 #menu-list ul li:hover {
@@ -262,6 +268,8 @@ header menu nav .container {
 
 #concepts .items img:hover {
     filter: grayscale(0);
+    -webkit-transition: all 0.3s ease-in-out 0.1s;
+    transition: all 0.3s ease-in-out 0.1s;
 }
 
 #concepts .items .btn-moreinf {
@@ -288,7 +296,7 @@ header menu nav .container {
 
 #concepts .items .btn-moreinf .btn-descr {
     margin-left: 10px;
-    opacity: 0.8;    
+    opacity: 0.7;    
 }
 
 /** conteudo central **/
@@ -304,7 +312,7 @@ header menu nav .container {
 }
 
 #inside-dev .inside-desc {
-    
+    color: #6F6F6F;
 }
 
 #inside-dev .inside-btn {
@@ -316,7 +324,7 @@ header menu nav .container {
 #content-middle {
     overflow: hidden;
     display: block;
-    height: 400px;
+    min-height: 400px;
     background: #ccc;
     line-height: 2;
 }
@@ -333,6 +341,7 @@ header menu nav .container {
 #content-middle #contentmd-right .inside-desc {
     padding-right: 90px;
     text-align:right;
+    color: #6F6F6F;
 }
 
 #content-middle #contentmd-right .inside-title {
@@ -346,18 +355,43 @@ header menu nav .container {
     margin-top: 20px;
 }
 
-#content-footer {
+/** content footer **/
+#content-footer { 
+    color: white;
+    position: relative;
+    height: 10rem;
     overflow: hidden;
     display: block;
-    height: 400px;
-    background: #C1D370;
+    background: #A41C20;
+    line-height: 4;
+    padding: 10px;
+    text-align: center;
 }
+
+/** footer **/
 
 #footer {
     overflow: hidden;
     display: block;
     height: 500px;
     background: #3c3c3c;
+}
+
+#footer div .footer-left {
+    
+}
+
+#footer div .footer-right {
+}
+
+#footer .copyright .footer-right {
+    text-align: right;
+}
+
+#footer .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    opacity: 0.6;
 }
 
 /** libs **/
