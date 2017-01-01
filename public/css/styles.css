@@ -146,6 +146,11 @@ img {
     overflow: hidden;
 }
 
+.custom-margin {
+    margin-top: 5px;
+    margin-bottom: 5px;        
+}
+
 /** pagina inicial **/
 
 #home {
@@ -371,17 +376,11 @@ header menu nav .container {
 /** footer **/
 
 #footer {
+    padding: 20px;
     overflow: hidden;
     display: block;
-    height: 500px;
+    min-height: 14rem;
     background: #3c3c3c;
-}
-
-#footer div .footer-left {
-    
-}
-
-#footer div .footer-right {
 }
 
 #footer .copyright .footer-right {
@@ -395,7 +394,26 @@ header menu nav .container {
 }
 
 /** libs **/
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
+}
+
+/** google maps **/
+
+.google-maps {
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
