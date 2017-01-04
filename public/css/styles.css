@@ -151,6 +151,10 @@ img {
     margin-bottom: 5px;        
 }
 
+.none {
+    display: none;
+}
+
 /** pagina inicial **/
 
 #home {
@@ -182,11 +186,11 @@ header menu nav .container {
     display: flex;
 }
 
-#logo {
+.logo {
     align-items: stretch;
 }
 
-#logo p { //sera a img da logo
+.logo img {
     display: block;
     position: absolute;
     top: 50%;
@@ -223,13 +227,18 @@ header menu nav .container {
 
 #menu-list ul li.active {
     border-top: 4px solid #00A690;
+    background-color: rgba(235, 235, 235, 100);
+}
+
+#menu-list ul li.active a {
+    color: #00A690 !important;
 }
 
 #menu-list ul li:hover {
-    /*border-top: 4px solid #CCC;*/
+    background-color: rgba(225, 225, 225, 100);
 }
 
-#menu-phone {
+.menu-phone {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +249,7 @@ header menu nav .container {
 #slider {
     margin-top: 140px;
     display: block;
-    height: 420px;
+    /*min-height: 420px;*/
     overflow: hidden;
 }
 

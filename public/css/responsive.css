@@ -1,0 +1,35 @@
+
+@media (max-width: 768px) {
+    #header {
+        display: none;
+    }
+
+    #header-responsive {
+        display: flex;
+    }
+
+    .container-responsive {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .middler {   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;  
+    } 
+    
+    .middler img {
+         max-width: 50%;
+    }
+    
+    .navbar-default {
+        background-color: rgba(230, 230, 230, 100);
+    }
+    
+    .navbar-toggle {
+        background-color: #F8F8F8;
+    }
+}

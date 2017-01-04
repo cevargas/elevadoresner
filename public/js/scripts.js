@@ -8,9 +8,17 @@ var APP = function () {
        });  
     };
     
+    mod.responsive = function(){
+        $( window ).resize(function() {
+            $("#logo").removeClass('col-md-3').addClass('col-md-6');
+        });
+        
+    };
+    
     return { 
         init: function(){
             mod.slider();
+            //mod.responsive();            
         }
     };
 

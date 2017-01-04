@@ -16,6 +16,7 @@
         <link href="public/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/libs/slippry/slippry.css" rel="stylesheet">
         <link href="public/css/styles.css" rel="stylesheet">
+        <link href="public/css/responsive.css" rel="stylesheet">
         <link href="public/css/hack.css" rel="stylesheet">
     </head>
 
@@ -29,8 +30,8 @@
                 <menu id="menu">                
                     <nav>
                         <div class="container">
-                            <div id="logo" class="col-md-3">
-                                <p>LOGO</p>
+                            <div class="logo col-md-3">
+                                <img src="public/images/logo.png" alt="Elevadores NER">
                             </div>
                             <div id="menu-list" class="col-md-7">
                                 <ul>
@@ -41,9 +42,44 @@
                                     <li><a>Contato</a></li>
                                 </ul>                        
                             </div>
-                            <div id="menu-phone" class="col-md-2">
+                            <div class="menu-phone col-md-2">
                                 <a class="btn btn-danger"><i class="glyphicon glyphicon-earphone"></i> (47) 3367-2135</a>
                             </div>
+                        </div>
+                    </nav>                   
+                </menu>
+            </header>
+            
+            <!-- cabecalho mobile -->
+            <header id="header-responsive" class="none row fixed-nav-bar">
+                <!-- menu -->
+                <menu id="menu-responsive">                
+                    <nav class="navbar-default">
+                        <div class="container-responsive">
+                            
+                            <div class="middler">
+                                <img src="public/images/logo.png" alt="Elevadores NER">
+                            </div>
+                            <div class="middler">
+                                <a class="btn btn-danger"><i class="glyphicon glyphicon-earphone"></i> (47) 3367-2135</a>
+                            </div>
+                            <div class="middler">
+                                <button type="button" class="navbar-toggle collapsed">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>                           
+                            <!--div id="menu-list-responsive" class="col-md-7">
+                                <ul>
+                                    <li class="active"><a>Empresa</a></li>
+                                    <li><a>Elevadores</a></li>
+                                    <li><a>Assistência</a></li>
+                                    <li><a>Modernização</a></li>
+                                    <li><a>Contato</a></li>
+                                </ul>                        
+                            </div-->                           
                         </div>
                     </nav>                   
                 </menu>
@@ -54,7 +90,7 @@
                 <ul id="slippry">
                     <li>
                         <a href="#slide1">                          
-                            <img src="public/images/slippry-01.jpg" alt="Welcome to Slippry!">                      
+                            <img src="public/images/banner.png" alt="Elevadores Residenciais">                      
                         </a>
                     </li>
                     <li>
@@ -120,7 +156,7 @@
                         </div>                        
                     </div>
                     <div id="inside-right" class="col-md-5">
-                        <img src="public/images/condominio.jpg" alt="Manutenção de elevadores para Condomínios" class="pull-right">
+                        <img src="public/images/condominio.png" alt="Manutenção de elevadores para Condomínios" class="pull-right">
                     </div>
                 </div>
             </div>
@@ -171,7 +207,7 @@
             <footer id="footer" class=" row clearfix">                
 
                 <div class="container">
-                    <div class="footer-left col-md-6">
+                    <div class="col-md-6">
                         <h2 class="white">
                             <span class="green-dark glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                             Onde estamos
@@ -200,7 +236,7 @@
                                     <li>Ner Comércio Elevadores Ltda</li>
                                     <li>R. Concórdia, 58 - Municípios</li>
                                     <li>Balneário Camboriú - SC, 88337-370</li>
-                                    <li><span class="red-lighten glyphicon glyphicon glyphicon-earphone" aria-hidden="true"></span> (47) 3367-2135</li>
+                                    <li><span class="red-lighten glyphicon glyphicon-earphone" aria-hidden="true"></span> (47) 3367-2135</li>
                                     <li><span class="red-lighten glyphicon glyphicon-envelope" aria-hidden="true"></span> contato@elevadoresner.com.br</li>
                                 </ul>  
                             </div>
@@ -237,7 +273,7 @@
                 </div>
                 
                 <div class="clearfix copyright container white"> 
-                    <div class="footer-left col-md-6">
+                    <div class="col-md-6">
                         © 2017 Ner Comércio Elevadores Ltda.   
                     </div>    
                     <div class="footer-right col-md-6">
