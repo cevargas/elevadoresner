@@ -4,6 +4,7 @@ html, body {
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     font-weight: normal;
+    background: #F5F5F5;
 }
 
 * { 
@@ -127,6 +128,19 @@ img {
     right:0;
     z-index: 9999;
     width:inherit;
+}
+
+.fixed-nav-bar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.fixed-nav-bar.scrolled {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
 }
 
 .shadow-bottom {
@@ -338,8 +352,11 @@ header menu nav .container {
 #content-middle {
     overflow: hidden;
     display: block;
-    min-height: 400px;
-    background: #ccc;
+    min-height: 25rem;
+    background: rgba(210, 221, 225, 100);    
+    background-image: url(../images/O6XIGO0.png);
+    background-repeat: no-repeat;
+    background-position: left; 
     line-height: 2;
 }
 
@@ -353,18 +370,18 @@ header menu nav .container {
 }
 
 #content-middle #contentmd-right .inside-desc {
-    padding-right: 90px;
+    padding-right: 80px;
     text-align:right;
     color: #6F6F6F;
 }
 
 #content-middle #contentmd-right .inside-title {
-    padding-right: 90px;
+    padding-right: 80px;
     text-align:right; 
 }
 
 #content-middle #contentmd-right .inside-btn {
-    padding-right: 90px;
+    padding-right: 80px;
     text-align:right; 
     margin-top: 20px;
 }
@@ -373,7 +390,7 @@ header menu nav .container {
 #content-footer { 
     color: white;
     position: relative;
-    height: 10rem;
+    min-height: 10rem;
     overflow: hidden;
     display: block;
     background: #A41C20;
@@ -393,6 +410,8 @@ header menu nav .container {
 }
 
 #footer .copyright .footer-right {
+    overflow: hidden;
+    display: block;
     text-align: right;
 }
 
@@ -400,13 +419,6 @@ header menu nav .container {
     margin-top: 20px;
     font-size: 0.9em;
     opacity: 0.6;
-}
-
-/** libs **/
-
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
 }
 
 /** google maps **/
@@ -425,4 +437,38 @@ header menu nav .container {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+/*
+Back to top button 
+*/
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#back-top a:hover {
+    color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+    opacity: 0.6;
+    width: 54px;
+    height: 54px;
+    display: block;
+    margin-bottom: 7px;
+    background: #ddd url(../images/up-arrow.png) no-repeat center center;
+    /* rounded corners */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    /* background color transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover span {
+    opacity: 1;
+    background-color: #CCC;
 }
