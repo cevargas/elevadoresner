@@ -13,13 +13,18 @@
     }
 
     #header-responsive {
-        display: flex;
+        display: inline-table;
+        vertical-align: middle;
     }
 
     .container-responsive {
         width: 100%;
         display: flex;
         overflow: hidden;
+    }
+    
+    #slider {
+        /*margin-top: 0;*/
     }
 
     .middler {   
@@ -34,13 +39,30 @@
     }
     
     .navbar-default {
-        background-color: rgba(230, 230, 230, 100);
+        background-color: rgba(225, 225, 225, 100);
     }
     
     .navbar-toggle {
         background-color: #F8F8F8;
     }
     
+    #menu-list-responsive {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #menu-list-responsive ul {        
+        list-style: none;
+        list-style-type: none;
+    }
+    
+    #menu-list-responsive ul li {
+        border-bottom: 1px solid #CCC;
+        padding: 8px;
+        text-align: center;
+    }
+
     #concepts .items {
         margin-bottom: 10px;
     }
@@ -88,5 +110,13 @@
     
     #footer {
         padding: 0;
+    }
+    
+    #footer .copyright div:first-child {
+        text-align: center;
+    }
+    
+    #footer .copyright div:last-child {
+        text-align: center;
     }
 }

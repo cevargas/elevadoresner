@@ -178,8 +178,8 @@ img {
 
 header {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
     background-color: rgba(230, 230, 230, 100);
     min-height: 100px;
 }
@@ -188,6 +188,7 @@ header menu {
     display: flex;
     align-items: stretch;
     flex: 1;  
+    min-height: 100px;
 }
 
 header menu nav  {   
@@ -258,10 +259,14 @@ header menu nav .container {
     justify-content: center;
 }          
 
+.open-menu-bottom {
+    
+}
+
 /** slider **/
 
 #slider {
-    margin-top: 140px;
+    margin-top: 100px;
     display: block;
     /*min-height: 420px;*/
     overflow: hidden;
@@ -416,7 +421,7 @@ header menu nav .container {
 }
 
 #footer .copyright {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     font-size: 0.9em;
     opacity: 0.6;
 }
@@ -451,7 +456,7 @@ Back to top button
 #back-top a:hover {
     color: #000;
 }
-/* arrow icon (span tag) */
+
 #back-top span {
     opacity: 0.6;
     width: 54px;
@@ -468,6 +473,7 @@ Back to top button
     -moz-transition: 1s;
     transition: 1s;
 }
+
 #back-top a:hover span {
     opacity: 1;
     background-color: #CCC;

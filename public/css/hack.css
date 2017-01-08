@@ -1,5 +1,5 @@
 /** hack google chrome **/
-menu {
+menu, ul {
     list-style-type: none;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;

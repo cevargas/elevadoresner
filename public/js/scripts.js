@@ -57,8 +57,18 @@ var APP = function () {
                         scrollTop: 0
                 }, 800);
                 return false;
+        });	
+    };
+    
+    mod.openMenuMobile = function() {
+        $(".open-menu-bottom").on("click", function(){
+            if($("#menu-list-responsive").hasClass("isOpen")) {
+                $("#menu-list-responsive").addClass("hide").removeClass("isOpen");    
+            }
+            else {
+                $("#menu-list-responsive").removeClass("hide").addClass("isOpen");            
+            }
         });
-	
     };
     
     return { 
@@ -68,6 +78,7 @@ var APP = function () {
             mod.validateContact();   
             mod.validateOrcamento();
             mod.scrollToTop();
+            mod.openMenuMobile();
         }
     };
 
