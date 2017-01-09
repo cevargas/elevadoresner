@@ -80,7 +80,7 @@
         display: none;
     }
     
-    #content-middle { 
+    #content-middle .container { 
         background-image: none;
         padding: 5px;
     }  
@@ -90,7 +90,6 @@
     }
     
     #content-middle #contentmd-right .inside-title {
-        padding-right: 0;
         padding: 5px;
         text-align: center; 
     }
