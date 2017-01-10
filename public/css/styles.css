@@ -181,27 +181,50 @@ img {
 }
 
 header {
+    top: 0;
+    margin-top: 0;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     display: flex;
     /*margin-top: 20px;
     margin-bottom: 20px;*/
     background-color: rgba(230, 230, 230, 100);
-    min-height: 100px;
+    height: 100px;
 }
 
 header menu {
+    top: 0;
+    left: 0;
+    margin-top: 0;    
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex;    
     display: flex;
-    align-items: stretch;
-    flex: 1;  
-    min-height: 100px;
+    flex: 1;
+    -webkit-flex: 1;
+    align-items: stretch; 
+    height: 100px;
 }
 
-header menu nav  {   
+header menu nav {   
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
     display: flex;
     align-items: stretch;
     flex: 1;  
+    -webkit-flex: 1;
 }
 
 header menu nav .container {  
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
     display: flex;
 }
 
@@ -272,6 +295,7 @@ header menu nav .container {
 #slider {
     margin-top: 100px;
     display: block;
+    max-height: 420px;
     /*min-height: 420px;*/
     overflow: hidden;
 }
@@ -340,7 +364,7 @@ header menu nav .container {
 
 #inside-dev {
     display: block;
-    min-height: 400px;
+    min-height: 380px;
     padding: 5px;
 }
 
@@ -354,6 +378,11 @@ header menu nav .container {
 
 #inside-dev .inside-btn {
     margin-top: 20px;
+}
+
+#inside-dev .inside-btn .btn {
+    width: 200px;
+    font-size: 1.1em;
 }
 
 /** conteudo secundario **/
@@ -398,27 +427,35 @@ header menu nav .container {
     margin-top: 20px;
 }
 
+#content-middle #contentmd-right .inside-btn .btn {
+    width: 200px;
+    font-size: 1.1em;
+}
+
 /** content footer **/
 #content-footer { 
-    color: white;
     position: relative;
-    min-height: 10rem;
+    min-height: 5rem;
     overflow: hidden;
     display: block;
-    background: #A41C20;
+    background: #000;
     line-height: 4;
     padding: 10px;
     text-align: center;
+}
+
+.btn-orcamento {
+    width: 200px;
+    font-size: 1.1em;
 }
 
 /** footer **/
 
 #footer {
     padding-top: 15px;
-    color: #878787;
+    color: #E8E8E8;
     overflow: hidden;
     display: block;
-    min-height: 14rem;
     background: #3c3c3c;
     font-size: 1.1em;
 }
@@ -444,6 +481,7 @@ header menu nav .container {
 }
 
 #footer .copyright {
+    color: #878787;
     margin-top: 40px;
     margin-bottom: 40px;
     opacity: 0.8;
@@ -455,7 +493,7 @@ header menu nav .container {
     margin-top: 15px;
     position: relative;
     margin-bottom: 10px;
-    height: 500px;
+    min-height: 270px;
     overflow: hidden;
 }
 

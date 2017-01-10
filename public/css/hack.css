@@ -6,6 +6,8 @@ menu, ul {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
+    padding: 0;
+    margin: 0px;
 }
 
 /** bootstrap **/
@@ -20,6 +22,3 @@ menu, ul {
     background-color: #00A690 !important;
     border-color: #119A85;
 }
-
-
-
