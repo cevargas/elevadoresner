@@ -264,7 +264,7 @@ header menu nav .container {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:100%;  
+    height: 100%;  
 }
 
 #menu-list ul li.active {
@@ -295,6 +295,7 @@ header menu nav .container {
 #slider {
     margin-top: 100px;
     display: block;
+    height: 370px;
     max-height: 420px;
     /*min-height: 420px;*/
     overflow: hidden;
@@ -553,4 +554,98 @@ Back to top button
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+/** Paginas internas **/
+
+#header-inside {
+    overflow: hidden;
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex;    
+    display: flex;   
+    margin-top: 100px;
+    height: 140px; 
+    background-color: rgba(245, 245, 245, 100);
+}
+
+#header-inside .header-inside-content {
+    display: flex;
+    align-items: center;
+    height: 100%;   
+    flex-flow: row wrap;
+   
+}
+
+#header-inside .empresa {
+    background-image: url(../images/porta.jpg);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    background-size: 50%;
+}
+
+#header-inside .header-inside-title {
+    color: #333;
+}
+
+#content-inside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFF;
+    display: block;
+}
+
+#content-inside p:not(.btn) {
+    font-size: 1.1em;
+}
+
+.image-fake {
+    display: table;
+    height: 450px;
+    width: 100%;
+    background: #F5F5F5;
+    opacity: 0.5;
+}
+
+.image-fake .glyphicon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 6em;
+    opacity: 0.5;
+    color: #CCC;
+}
+
+.texto-destaque {
+    font-weight: 800;
+}
+
+.btn-plus {
+    margin-top: 20px;
+    width: 240px;
+    font-size: 1em;
+}
+
+.caminho {
+    padding-bottom: 20px;
+    color: #999;
+}
+
+.galeria {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.galeria div {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #CCC;
+}
+
+.galeria div .glyphicon {
+    color: #999;
 }
