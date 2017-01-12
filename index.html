@@ -9,10 +9,14 @@
         <meta name="author" content="Carlos Eduardo de Vargas">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
 
         <title>Elevadores NER</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,700" rel="stylesheet">
         <link href="public/css/normalize.css" rel="stylesheet">
         <link href="public/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/libs/slippry/slippry.css" rel="stylesheet">
@@ -21,6 +25,8 @@
         <link href="public/css/hack.css" rel="stylesheet">
         <link href="public/css/animate.css" rel="stylesheet">
         <link href="public/libs/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        <link href="public/libs/photo-swipe/photoswipe.css" rel="stylesheet">
+        <link href="public/libs/photo-swipe/default-skin/default-skin.css" rel="stylesheet">         
     </head>
 
     <body id="top">
@@ -237,35 +243,7 @@
                         </h2>
                         <div class="clearfix google-maps">                          
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14219.622336526034!2d-48.6403997!3d-27.0015363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5993926f06426b25!2sNer+Com%C3%A9rcio+Elevadores+Ltda!5e0!3m2!1spt-BR!2sbr!4v1483280872551" width="400" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>      
-
-                        <!--div class="clearfix">
-                            <form id="form-contato" method="POST" action="" data-toggle="validator" role="form">
-                                <div class="form-group">   
-                                    <div class="col-md-12 custom-margin">
-                                        <input type="text" class="form-control" id="contato-nome" required name="contato-nome" placeholder="Nome">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-8 custom-margin">
-                                        <input type="email" class="form-control" id="contato-email" required name="contato-email" placeholder="Email">
-                                    </div>
-                                    <div class="col-md-4 custom-margin">
-                                        <input type="text" class="form-control" id="contato-fone" required name="contato-fone" placeholder="Telefone">
-                                    </div>    
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12 custom-margin">
-                                        <textarea class="form-control" rows="3" name="contato-mensagem" required placeholder="Escreva sua mensagem"></textarea>
-                                    </div>
-                                </div>      
-                                <div class="form-group">
-                                    <div class="col-md-12 custom-margin">
-                                        <button type="submit" class="btn btn-success">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div-->
+                        </div> 
                     </div>
                 </div>                
     
@@ -285,14 +263,14 @@
 
         <!-- scripts -->
         <script src="public/js/jquery-2.1.1.js"></script>  
+        <script src="public/js/modernizr-2.6.2.min.js"></script>        
         <script src="public/libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/libs/slippry/slippry.min.js"></script>
         <script src="public/libs/bootstrap-validator/validator.min.js"></script>
+        <script src="public/libs/photo-swipe/photoswipe.min.js"></script>
+        <script src="public/libs/photo-swipe/photoswipe-ui-default.min.js"></script>
         <script src="public/js/scripts.js"></script>
-        <script src="public/js/modernizr-2.6.2.min.js"></script>        
-        <script src="public/js/toucheffects.js"></script>
-        <script src="public/js/waypoints.min.js"></script>
-
+        
         <script>
             $(document).ready(function () {
                 APP.init();

@@ -118,4 +118,22 @@
     #footer .copyright div:last-child {
         text-align: center;
     }
+    
+    /** paginas internas **/
+    
+    .btn-orcamento {
+        margin-bottom: 40px;
+    }
+    
+    #header-inside .empresa {
+        background-image: none;
+    }
+    
+    .caminho {
+        margin-top: 20px;
+    }
+    
+    .div-btn-empresa {
+        text-align: center;
+    }
 }

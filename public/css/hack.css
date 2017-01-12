@@ -22,3 +22,7 @@ menu, ul {
     background-color: #00A690 !important;
     border-color: #119A85;
 }
+
+h3 {
+    font-weight: 300 !important;
+}
