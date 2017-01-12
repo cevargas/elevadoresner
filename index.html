@@ -25,11 +25,15 @@
         <link href="public/css/hack.css" rel="stylesheet">
         <link href="public/css/animate.css" rel="stylesheet">
         <link href="public/libs/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="public/libs/photo-swipe/photoswipe.css" rel="stylesheet">
-        <link href="public/libs/photo-swipe/default-skin/default-skin.css" rel="stylesheet">         
+        <link href="public/css/animate.css" rel="stylesheet">
+        <link href="public/libs/outdated/outdatedbrowser.min.css" rel="stylesheet">
+        <link href="public/libs/photo-swipe/photoswipe.css" rel="stylesheet"> 
+        <link href="public/libs/photo-swipe/default-skin/default-skin.css" rel="stylesheet">             
     </head>
 
     <body id="top">
+        
+        <div id="outdated"></div>
 
         <div id="home" class="container-fluid">
 
@@ -102,22 +106,30 @@
                 <ul id="slippry">
                     <li>
                         <a href="#slide1">                          
-                            <img src="public/images/residencial.png" alt="Elevadores Residenciais">                      
+                            <img src="public/images/residencial_pcmac.png" alt="Elevadores Residenciais" class="visible-lg visible-md">      
+                            <img src="public/images/residencial_tablet.png" alt="Elevadores Residenciais" class="visible-sm"> 
+                            <img src="public/images/residencial_cel.png" alt="Elevadores Residenciais" class="visible-xs"> 
                         </a>
                     </li>
                     <li>
                         <a href="#slide2">
-                            <img src="public/images/carga.png"  alt="Elevadores de Carga">
+                            <img src="public/images/carga_pcmac.png" alt="Elevadores de Carga" class="visible-lg visible-md">
+                            <img src="public/images/carga_tablet.png" alt="Elevadores de Carga" class="visible-sm">
+                            <img src="public/images/carga_cel.png" alt="Elevadores de Carga" class="visible-xs">
                         </a>
                     </li>
                     <li>
                         <a href="#slide3">
-                            <img src="public/images/comercial.png" alt="Elevadores Comerciais">
+                            <img src="public/images/comercial_pcmac.png" alt="Elevadores Comerciais" class="visible-lg visible-md">
+                            <img src="public/images/comercial_tablet.png" alt="Elevadores Comerciais" class="visible-sm">
+                            <img src="public/images/comercial_cel.png" alt="Elevadores Comerciais" class="visible-xs">
                         </a>
                     </li>
                     <li>
                         <a href="#slide4">
-                            <img src="public/images/formato.png" alt="Elevadores com Formato Exclusivo">
+                            <img src="public/images/exclusivo_pcmac.png" alt="Elevadores com Formato Exclusivo" class="visible-lg visible-md">
+                            <img src="public/images/exclusivo_tablet.png" alt="Elevadores com Formato Exclusivo" class="visible-sm">
+                            <img src="public/images/exclusivo_cel.png" alt="Elevadores com Formato Exclusivo" class="visible-xs">
                         </a>
                     </li>
                 </ul>
@@ -267,8 +279,10 @@
         <script src="public/libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/libs/slippry/slippry.min.js"></script>
         <script src="public/libs/bootstrap-validator/validator.min.js"></script>
-        <script src="public/libs/photo-swipe/photoswipe.min.js"></script>
-        <script src="public/libs/photo-swipe/photoswipe-ui-default.min.js"></script>
+        <script src="public/libs/outdated/outdatedbrowser.min.js"></script>
+        <script src="public/libs/photo-swipe/photoswipe.min.js"></script> 
+        <script src="public/libs/photo-swipe/photoswipe-ui-default.min.js"></script> 
+        
         <script src="public/js/scripts.js"></script>
         
         <script>

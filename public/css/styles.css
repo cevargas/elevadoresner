@@ -126,7 +126,7 @@ img {
     top: 0;
     left: 0;
     right:0;
-    z-index: 9999;
+    z-index: 1000;
     width:inherit;
     -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
     -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
@@ -302,7 +302,8 @@ header menu nav .container {
 #slider {
     margin-top: 100px;
     display: block;
-    max-height: 420px;
+    max-height: 400px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -643,20 +644,21 @@ Back to top button
     color: #999;
 }
 
-.galeria {
-    margin-bottom: 10px;
+.my-gallery {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+.my-gallery img {
+    width: 200px;
+    height: 200px;
+}
+.my-gallery figure {
     display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    /*width: 150px;*/
 }
-
-.galeria div {
-    width: 120px;
-    height: 120px;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #CCC;
-}
-
-.galeria div .glyphicon {
-    color: #999;
+.my-gallery figcaption {
+    display: none;
 }
