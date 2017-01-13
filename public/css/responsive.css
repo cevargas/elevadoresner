@@ -101,6 +101,7 @@
     #content-middle #contentmd-right .inside-desc {
         padding: 5px;
         text-align:center; 
+        margin-left: 0;
     }
     
     #content-middle #contentmd-right .inside-btn {
