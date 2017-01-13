@@ -473,6 +473,10 @@ header menu nav .container {
     font-size: 1.1em;
 }
 
+#footer .glyphicon {
+    font-size: 0.8em;
+}
+
 .contact-info li {
     position: relative;
     padding: 0;
