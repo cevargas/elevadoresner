@@ -34,6 +34,10 @@
         flex: 1;  
     } 
     
+    .middler a {
+        text-align: center;
+    }
+    
     .middler img {
          max-width: 50%;
     }
@@ -75,7 +79,7 @@
     #inside-dev .inside-title, #inside-dev .inside-desc, #inside-dev .inside-btn {
         text-align: center; 
     }
-    
+        
     #inside-dev #inside-right {
         display: none;
     }
@@ -90,12 +94,11 @@
     }
     
     #content-middle #contentmd-right .inside-title {
-        padding: 5px;
+        margin: 5px;
         text-align: center; 
     }
     
     #content-middle #contentmd-right .inside-desc {
-        padding-right: 0px;
         padding: 5px;
         text-align:center; 
     }
@@ -135,5 +138,9 @@
     
     .div-btn-empresa {
         text-align: center;
+    }
+    
+    .my-gallery {
+        margin-top: 30px;
     }
 }

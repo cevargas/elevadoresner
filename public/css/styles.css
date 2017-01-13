@@ -397,30 +397,30 @@ header menu nav .container {
 #content-middle {
     overflow: hidden;
     display: block;
-    min-height: 25rem;
-    background: rgba(210, 221, 225, 100);    
-    line-height: 2;
+    min-height: 380px;
+    background: rgba(210, 221, 225, 100);
 }
 
-#content-middle .container {    
-    min-height: 25rem;
+#content-middle .container {  
+    min-height: 380px;
     overflow: hidden;
     display: block;
     background-image: url(../images/O6XIGO0.png);
     background-repeat: no-repeat;
     background-position: left; 
+    margin-top: 30px;
 }
 
 #content-middle #contentmd-left {
-    margin-top: 30px;
+    
 }
 
 #content-middle #contentmd-right {
     display: block;
-    padding-top: 20px;
 }
 
 #content-middle #contentmd-right .inside-desc {
+    margin-left: 20px;
     text-align:right;
 }
 
@@ -644,17 +644,24 @@ Back to top button
     color: #999;
 }
 
+/** Galeria de imagens **/
 .my-gallery {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     float: left;
 }
+
 .my-gallery img {
     width: 200px;
     height: 200px;
 }
+
 .my-gallery figure {
-    display: block;
+    display: inline-block;
     float: left;
     margin: 0 5px 5px 0;
     /*width: 150px;*/
