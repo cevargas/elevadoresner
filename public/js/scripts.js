@@ -74,8 +74,8 @@ var APP = function (PHOTOSWIPE) {
     mod.resize = function(){        
         $( window ).resize(function() {
             //reinicializa o slider
-            if(slippry !== null){
-                if ($("#slippry").css('visibility') !== 'hidden') {
+            if(slippry !== null){  
+                if ($("#slippry").length) {
                     slippry.reloadSlider();
                 }
             }

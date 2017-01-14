@@ -125,6 +125,10 @@
     
     /** paginas internas **/
     
+    .pg-text {
+        margin-top: 20px;
+    }
+    
     .btn-orcamento {
         margin-bottom: 40px;
     }
@@ -143,5 +147,22 @@
     
     .my-gallery {
         margin-top: 30px;
+    }
+    
+    
+    /** contato **/
+    .pg-contato-btn {
+        text-align:center;
+    }
+    .pg-contato-btn .btn {
+        width: 140px;
+    }
+    
+    .pg-contato ul {
+        display: block;
+        overflow: hidden;
+        margin-top: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
