@@ -173,6 +173,14 @@ img {
     display: none;
 }
 
+.h-light {
+    font-weight: 300 !important;
+}
+
+.h-bold {
+    font-weight: 700 !important;
+}
+
 /** pagina inicial **/
 
 #home {
@@ -381,15 +389,6 @@ header menu nav .container {
 
 #inside-dev .inside-desc {
 
-}
-
-#inside-dev .inside-btn {
-    margin-top: 20px;
-}
-
-#inside-dev .inside-btn .btn {
-    width: 200px;
-    font-size: 1.1em;
 }
 
 /** conteudo secundario **/
@@ -601,6 +600,27 @@ Back to top button
     background-size: 50%;
 }
 
+#header-inside .elevador {
+    background-image: url(../images/porta.jpg);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    background-size: 50%;
+}
+
+#header-inside .assistencia {
+    background-image: url(../images/assistencia.jpg);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    background-size: 50%;
+}
+
+#header-inside .modernizacao {
+    background-image: url(../images/modernizacao.jpg);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    background-size: 50%;
+}
+
 #header-inside .header-inside-title {
     color: #333;
 }
@@ -624,7 +644,15 @@ Back to top button
     opacity: 0.5;
 }
 
-.image-fake .glyphicon {
+.image-fake-min {
+    display: table;
+    height: 250px;
+    width: 100%;
+    background: #F5F5F5;
+    opacity: 0.5;
+}
+
+.image-fake .glyphicon, .image-fake-min .glyphicon {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -648,7 +676,43 @@ Back to top button
     color: #999;
 }
 
+.inside-btn {
+    margin-top: 20px;
+}
+
+.inside-btn .btn {
+    width: 200px;
+    font-size: 1.1em;
+}
+
+.pg-inside-descrip {
+    display: block;
+    overflow: hidden;
+}
+
+.pg-inside-descrip h4 {
+    line-height: 1.2;
+}
+
+.pg-inside-btn {
+    display: block;
+    margin-top: 40px;
+}
+
+/** pagina elevadores **/
+.item-inside {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.item-inside:hover {
+    background: #F5F5F5;
+}
+
+
 /** Galeria de imagens **/
+
 .my-gallery {
     display: flex;
     flex-direction: row;
@@ -670,6 +734,7 @@ Back to top button
     margin: 0 5px 5px 0;
     /*width: 150px;*/
 }
+
 .my-gallery figcaption {
     display: none;
 }

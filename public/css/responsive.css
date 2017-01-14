@@ -129,7 +129,7 @@
         margin-bottom: 40px;
     }
     
-    #header-inside .empresa {
+    #header-inside .empresa, #header-inside .elevador, #header-inside .assistencia, #header-inside .modernizacao {
         background-image: none;
     }
     

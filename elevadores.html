@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <title>Elevadores NER :: Contato</title>
+        <title>Elevadores NER :: Elevadores</title>
 
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,700" rel="stylesheet">
         <link href="public/css/normalize.css" rel="stylesheet">
@@ -46,11 +46,11 @@
                             <div id="menu-list" class="col-md-7">
                                 <ul>
                                     <li><a href="empresa.html">Empresa</a></li>
-                                    <li><a href="elevadores.html">Elevadores</a></li>
+                                    <li class="active"><a href="elevadores.html">Elevadores</a></li>
                                     <li><a href="assistencia.html">Assistência</a></li>
                                     <li><a href="modernizacao.html">Modernização</a></li>
-                                    <li class="active"><a href="contato.html">Contato</a></li>
-                                </ul>                        
+                                    <li><a href="contato.html">Contato</a></li>
+                                </ul>                         
                             </div>
                             <div class="menu-phone col-md-2">
                                 <a href="tel:4733672135" class="btn btn-success"><i class="glyphicon glyphicon-earphone"></i> (47) 3367-2135</a>
@@ -90,21 +90,21 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="empresa.html">Empresa</a></li>
-                        <li><a href="elevadores.html">Elevadores</a></li>
+                        <li class="active"><a href="elevadores.html">Elevadores</a></li>
                         <li><a href="assistencia.html">Assistência</a></li>
                         <li><a href="modernizacao.html">Modernização</a></li>
-                        <li class="active"><a href="contato.html">Contato</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>                        
                 </div>    
             </header>
 
             <!-- header interno -->
             <div id="header-inside" class="row">
-                <div class="header-inside-content assistencia container">
+                <div class="header-inside-content elevador container">
                     <div class="row col-md-12">
                         <h2>
-                            <span class="green-dark glyphicon glyphicon-comment" aria-hidden="true"></span>
-                            <span class="header-inside-title"> Contato</span>
+                            <span class="green-dark glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <span class="header-inside-title"> Elevadores</span>
                         </h2>
                     </div>                    
                 </div>
@@ -112,75 +112,113 @@
 
             <!-- conteudo -->
             <div id="content-inside" class="row">
-                <div class="container">     
-                    
-                    <div class="col-md-12">
-                        <p>Preencha formulário abaixo para entra em contato conosco.</p>
-                        <p>(<span class="red-lighten">*</span>) campos obrigatórios.</p>
+                <div class="item-inside container">                    
+                    <div class="col-md-4">
+                        <div class="image-fake-min radius">
+                            <span class="center-block green-dark glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        </div>
                     </div>
-                   
-                    <div class="col-md-8">  
- 
-                        <form id="form-contato" method="POST" action="" data-toggle="validator" role="form">
-                            <div class="form-group">   
-                                <div class="col-md-12 custom-margin">
-                                    <label for="contato-nome">Nome <span class="red-lighten">*</span></label>
-                                    <input type="text" class="form-control" id="contato-nome" required name="contato-nome" placeholder="Nome">
-                                </div>
+
+                    <div class="col-md-8">                        
+                        <h2 class="red-darker">
+                            <span class="h-light">Elevador</span> <span class="h-bold">Residencial</span>
+                        </h2>                        
+                        <div class="pg-inside-descrip">
+                            <h4>É simplesmente uma simulação de texto da indústria 
+                                tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
+                                quando um impressor desconhecido pegou uma 
+                                bandeja de tipos e os embaralhou para fazer um livro de
+                                modelos de tipos. 
+                            </h4>                           
+                        </div>
+                        <div class="pg-inside-btn">
+                            <div class="inside-btn">
+                                <a href="#" class="btn btn-sm btn-success">Saiba mais</a>   
                             </div>
-                            <div class="form-group">
-                                <div class="col-md-8 custom-margin">
-                                    <label for="contato-email">Email <span class="red-lighten">*</span></label>
-                                    <input type="email" class="form-control" id="contato-email" required name="contato-email" placeholder="Email">
-                                </div>
-                                <div class="col-md-4 custom-margin">
-                                    <label for="contato-fone">Telefone <span class="red-lighten">*</span></label>
-                                    <input type="text" class="form-control" id="contato-fone" required name="contato-fone" placeholder="Telefone">
-                                </div>    
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-8 custom-margin">
-                                    <label for="contato-assunto">Assunto <span class="red-lighten">*</span></label>
-                                    <select id="contato-assunto" name="contato-assunto" class="form-control">
-                                        <option value="geral">Geral</option>
-                                        <option value="assistencia">Assistência Técnica</option>
-                                        <option value="orcamento">Orçamento</option>
-                                        <option value="duvidas">Dúvidas</option>                                        
-                                    </select>                                    
-                                </div>
-                                <div class="col-md-4 custom-margin">
-                                   
-                                </div>    
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12 custom-margin">
-                                    <label for="contato-mensagem">Mensagem <span class="red-lighten">*</span></label>
-                                    <textarea class="form-control" rows="3" id="contato-mensagem" name="contato-mensagem" required placeholder="Escreva sua mensagem"></textarea>
-                                </div>
-                            </div>      
-                            <div class="form-group">
-                                <div class="col-md-12 custom-margin">
-                                    <button type="submit" class="btn btn-success">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                       
+                        </div>
                     </div><!-- col md 8 -->
-                    
-                    <div class="col-md-4">                
-                        <ul class="contact-info list-unstyled">
-                            <li><i class="icon-home"></i>
-                                Ner Comércio Elevadores Ltda. 
-                                <br>R. Concórdia, 58 - Municípios
-                                <br>Balneário Camboriú - SC, 88337-370
-                            </li>
-                            <li><i class="icon-phone"></i><a href="tel:4733672135"> (47) 3367-2135</a></li>
-                            <li><i class="icon-envelope"></i><a href="mailto:contato@elevadoresner.com.br"> contato@elevadoresner.com.br</a></li>
-                            <li><i class="icon-globe"></i><a href="http://www.elevadoresner.com.br"> http://www.elevadoresner.com.br</a></li>
-                            <li><i class="icon-social-facebook"></i><a href="https://www.facebook.com/pages/NER-Elevadores/1644197332524509?fref=ts">Curta nossa página no Facebook</a></li>
-                        </ul>
-                    </div>                    
-                </div>
+                </div><!-- item-inside -->
+                
+                <div class="item-inside container">                    
+                    <div class="col-md-4">
+                        <div class="image-fake-min radius">
+                            <span class="center-block green-dark glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">                        
+                        <h2 class="red-darker">
+                            <span class="h-light">Elevador</span> <span class="h-bold">Comercial</span>
+                        </h2>                        
+                        <div class="pg-inside-descrip">
+                            <h4>É simplesmente uma simulação de texto da indústria 
+                                tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
+                                quando um impressor desconhecido pegou uma 
+                                bandeja de tipos e os embaralhou para fazer um livro de
+                                modelos de tipos. 
+                            </h4>                           
+                        </div>
+                        <div class="pg-inside-btn">
+                            <div class="inside-btn">
+                                <a href="#" class="btn btn-sm btn-success">Saiba mais</a>   
+                            </div>
+                        </div>
+                    </div><!-- col md 8 -->
+                </div><!-- item-inside -->
+                
+                <div class="item-inside container">                    
+                    <div class="col-md-4">
+                        <div class="image-fake-min radius">
+                            <span class="center-block green-dark glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">                        
+                        <h2 class="red-darker">
+                            <span class="h-light">Elevador</span> <span class="h-bold">Cargas</span>
+                        </h2>                        
+                        <div class="pg-inside-descrip">
+                            <h4>É simplesmente uma simulação de texto da indústria 
+                                tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
+                                quando um impressor desconhecido pegou uma 
+                                bandeja de tipos e os embaralhou para fazer um livro de
+                                modelos de tipos. 
+                            </h4>                           
+                        </div>
+                        <div class="pg-inside-btn">
+                            <div class="inside-btn">
+                                <a href="#" class="btn btn-sm btn-success">Saiba mais</a>   
+                            </div>
+                        </div>
+                    </div><!-- col md 8 -->
+                </div><!-- item-elevador -->
+                
+                <div class="item-inside container">                    
+                    <div class="col-md-4">
+                        <div class="image-fake-min radius">
+                            <span class="center-block green-dark glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">                        
+                        <h2 class="red-darker">
+                            <span class="h-light">Elevador</span> <span class="h-bold">Formato Exclusivo</span>
+                        </h2>                        
+                        <div class="pg-inside-descrip">
+                            <h4>É simplesmente uma simulação de texto da indústria 
+                                tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
+                                quando um impressor desconhecido pegou uma 
+                                bandeja de tipos e os embaralhou para fazer um livro de
+                                modelos de tipos. 
+                            </h4>                           
+                        </div>
+                        <div class="pg-inside-btn">
+                            <div class="inside-btn">
+                                <a href="#" class="btn btn-sm btn-success">Saiba mais</a>   
+                            </div>
+                        </div>
+                    </div><!-- col md 8 -->
+                </div><!-- item-inside -->
             </div>
 
             <div id="content-footer" class="row">
@@ -262,4 +300,4 @@
         </script>    
 
     </body>
-</html>  
+</html>
