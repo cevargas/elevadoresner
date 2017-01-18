@@ -71,13 +71,22 @@ var APP = function (PHOTOSWIPE) {
         }));
     };
     
-    mod.resize = function(){        
-        $( window ).resize(function() {
-            //reinicializa o slider
-            if(slippry !== null){  
-                if ($("#slippry").length) {
-                    slippry.reloadSlider();
+    mod.resize = function(){     
+        
+        var cachedWidth = $(window).width();
+        $( window ).resize(function(e) {
+            
+            var newWidth = $(window).width();
+            if(newWidth !== cachedWidth){
+                
+                //reinicializa o slider
+                if(slippry !== null){  
+                    if ($("#slippry").length) {
+                        slippry.reloadSlider();
+                    }
                 }
+                
+                cachedWidth = newWidth;
             }
         });
     };
