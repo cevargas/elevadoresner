@@ -98,7 +98,7 @@ var APP = function (PHOTOSWIPE) {
             mod.scrollToTop();
             mod.openMenuMobile();
             mod.outdated();
-            mod.resize();
+            mod.resize();       
             
             PHOTOSWIPE('.my-gallery');
         }
